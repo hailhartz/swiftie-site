@@ -40,8 +40,8 @@ div.song {
 }
 
 @keyframes shimmerOne {
-    0% {background-color: white;}
-    100% {background-color: gold;}
+    0% {background-color: gold;}
+    100% {background-color: rgb(254, 240, 155);}
 }
 
 /* @keyframes shimmerTwo {
@@ -93,7 +93,7 @@ span {
 }
 
 td {
-    background-color: white;
+    background-color: gold;
     /* display: inline-block; */
     width: 3px;
     height: 3px;
