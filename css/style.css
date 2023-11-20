@@ -54,24 +54,50 @@ span {
     display: inline-block;
     width: 5px;
     height: 5px;
+    margin: 0px;
     /* animation-name: shimmerOne;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
 
-span.two {
+.two {
     animation-name: shimmerOne;
     animation-duration: 0.75s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-span.three {
+.three {
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.four {
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.five {
     animation-name: shimmerOne;
     animation-duration: 0.75s;
     animation-delay: 0.75s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+td {
+    background-color: white;
+    /* display: inline-block; */
+    width: 3px;
+    height: 3px;
+    /* margin: 0px;
+    padding: 0px; */
 }
 
