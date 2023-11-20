@@ -1,0 +1,73 @@
+header.speak {
+    background-color: #923c81;
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+}
+
+.speak h1 {
+    color: white;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+}
+
+body.speak {
+    background-color: #e2b7ce;
+}
+
+div.song_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin: 20px auto;
+}
+
+h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+div.song {
+    border: 10px solid gold;
+    border-radius: 5%;
+    padding: 5px;
+    background-color: #db7ca5;
+}
+
+@keyframes shimmerOne {
+    from {background-color: white;}
+    to {background-color: gold;}
+}
+
+@keyframes shimmerTwo {
+    from {background-color: gold;}
+    to {background-color: white;}
+}
+
+span.one {
+    background-color: white;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    animation-name: shimmerOne;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+span.two {
+    background-color: gold;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    animation-name: shimmerTwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+}
+
