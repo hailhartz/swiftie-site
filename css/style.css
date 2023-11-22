@@ -20,6 +20,10 @@ body.speak {
     background-color: #e2b7ce;
 }
 
+body.folklore {
+    background-color: #ccc494;
+}
+
 div.song_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,6 +55,10 @@ div.song {
 
 .reputation div.song {
     background-color: rgb(169, 151, 151);
+}
+
+.folklore div.song {
+    background-color: #999c56;
 }
 
 @keyframes shimmerOne {
@@ -179,6 +187,17 @@ nav li a:hover {
     background-color: #004a3a;
 }
 
+.folklore nav ul {
+    background-color: #d6b56e;
+}
+
+.folklore nav li a:hover {
+    background-color: #d9cb9b;
+}
+
+header.folklore {
+    background-color: #004a3a;
+}
 
 header.eras h1 {
     font-family: 'Luckiest Guy', Times, serif;
@@ -190,7 +209,12 @@ header.reputation h1 {
     font-family: "Playfair Dispay SC", Times, serif;
 }
 
-
+header.folklore h1 {
+    padding: 20px;
+    color: #d6b56e;
+    font-family: "Kalam", Times, serif;
+    text-shadow: 1px 1px 10px black;
+}
 
 @media only screen and (min-width: 600px) {
     div.song_container {
@@ -216,6 +240,20 @@ header.reputation h1 {
         font-family: 'Luckiest Guy', Times, serif;
     }
 
+    header.speak {
+        background-image: url('../images/speaknow_glitter_background.jpg');
+        height: 270px;
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    header.speak h1 {
+        padding: 70px;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        font-weight: 600;
+    }
+
     header.reputation {
         background-image: url('../images/rep_background.jpg');
         height: 270px;
@@ -224,6 +262,18 @@ header.reputation h1 {
     header.reputation h1 {
         padding: 80px;
     }
+
+    header.folklore {
+        background-image: url('../images/folkore_background.jpg');
+        height: 270px;
+        background-position-y: center;
+        background-size: cover;
+    }
+
+    header.folklore h1 {
+        padding: 70px;
+    }
+
 
 }
 
