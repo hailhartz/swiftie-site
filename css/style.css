@@ -41,9 +41,12 @@ p {
 div.song {
     border-radius: 5%;
     padding: 5px;
-    background-color: #db7ca5;
     width: 95%;
     margin: 10px;
+}
+
+.speak div.song {
+    background-color: #db7ca5;
 }
 
 @keyframes shimmerOne {
@@ -164,6 +167,12 @@ nav li a:hover {
     background-color: #8945be;
 }
 
+header.eras h1 {
+    font-family: 'Luckiest Guy', Times, serif;
+    font-size: 80px;
+    text-shadow: 1px 1px 5px black;
+}
+
 
 
 @media only screen and (min-width: 600px) {
@@ -172,11 +181,31 @@ nav li a:hover {
     }
 
     h1 {
-        font-size: 150px;
+        font-size: 100px;
     }
 
     header.eras {
-        background-image: url('../images/eras_background.webp');
+        background-image: url('../images/wide_swift_background.webp');
+        height: 300px;
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header.eras h1 {
+        padding: 100px;
+        color: white;
+        font-size: 80px;
+        font-family: 'Luckiest Guy', Times, serif;
+    }
+
+    header.reputation {
+        background-image: url('../images/rep_background.jpg');
+        height: 300px;
+    }
+
+    header.reputation h1 {
+        padding: 90px;
     }
 
 }
@@ -200,5 +229,14 @@ nav li a:hover {
     
     .five_desktop {
         display: block;
+    }
+
+    header.eras {
+        height: 400px;
+    }
+
+    header.eras h1 {
+        padding: 150px;
+        font-size: 100px;
     }
 }
