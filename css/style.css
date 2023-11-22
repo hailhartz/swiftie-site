@@ -49,6 +49,10 @@ div.song {
     background-color: #db7ca5;
 }
 
+.reputation div.song {
+    background-color: rgb(169, 151, 151);
+}
+
 @keyframes shimmerOne {
     /* 0% {background-color: gold;}
     100% {background-color: rgb(254, 240, 155);} */
@@ -167,10 +171,23 @@ nav li a:hover {
     background-color: #8945be;
 }
 
+.reputation nav ul {
+    background-color: #002c23;
+}
+
+.reputation nav li a:hover {
+    background-color: #004a3a;
+}
+
+
 header.eras h1 {
     font-family: 'Luckiest Guy', Times, serif;
     font-size: 80px;
     text-shadow: 1px 1px 5px black;
+}
+
+header.reputation h1 {
+    font-family: "Playfair Dispay SC", Times, serif;
 }
 
 
@@ -201,11 +218,11 @@ header.eras h1 {
 
     header.reputation {
         background-image: url('../images/rep_background.jpg');
-        height: 300px;
+        height: 270px;
     }
 
     header.reputation h1 {
-        padding: 90px;
+        padding: 80px;
     }
 
 }
