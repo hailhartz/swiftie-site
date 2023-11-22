@@ -2,8 +2,12 @@ header.speak {
     background-color: #923c81;
 }
 
+header.eras {
+    background-color: #b5e9f6;
+}
+
 h1 {
-    font-size: 150px;
+    font-size: 100px;
     text-align: center;
 }
 
@@ -18,7 +22,7 @@ body.speak {
 
 div.song_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 95%;
     margin: 20px auto;
 }
@@ -35,16 +39,18 @@ p {
 }
 
 div.song {
-    border: 10px solid gold;
     border-radius: 5%;
     padding: 5px;
     background-color: #db7ca5;
     width: 95%;
+    margin: 10px;
 }
 
 @keyframes shimmerOne {
-    0% {background-color: gold;}
-    100% {background-color: rgb(254, 240, 155);}
+    /* 0% {background-color: gold;}
+    100% {background-color: rgb(254, 240, 155);} */
+    0% {background-color: white;}
+    100% {background-color: silver;}
 }
 
 /* @keyframes shimmerTwo {
@@ -95,8 +101,43 @@ span {
     animation-direction: alternate;
 }
 
+.two_desktop {
+    display: none;
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.three_desktop {
+    display: none;
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.four_desktop {
+    display: none;
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.five_desktop {
+    display: none;
+    animation-name: shimmerOne;
+    animation-duration: 0.75s;
+    animation-delay: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 td {
-    background-color: gold;
+    background-color: white;
     /* display: inline-block; */
     width: 3px;
     height: 3px;
@@ -104,3 +145,60 @@ td {
     padding: 0px; */
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #632e6d;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+  }
+
+nav li a:hover {
+    background-color: #8945be;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    div.song_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 150px;
+    }
+
+    header.eras {
+        background-image: url('../images/eras_background.webp');
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    div.song_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .two_desktop {
+        display: block;
+    }
+    
+    .three_desktop {
+        display: block;
+    }
+    
+    .four_desktop {
+        display: block;
+    }
+    
+    .five_desktop {
+        display: block;
+    }
+}
