@@ -3,7 +3,8 @@ header.speak {
 }
 
 header.eras {
-    background-color: #b5e9f6;
+    background-color: rgb(255, 32, 125);
+    height: 150px;
 }
 
 h1 {
@@ -195,6 +196,18 @@ nav li a:hover {
     background-color: #d9cb9b;
 }
 
+.eras nav ul {
+    background-color: #ff4cc9;
+}
+
+.eras nav li a:hover {
+    background-color: #ec7fcc;
+}
+
+body.eras {
+    background-color: #e2b7ce;
+}
+
 header.folklore {
     background-color: #004a3a;
 }
@@ -203,6 +216,8 @@ header.eras h1 {
     font-family: 'Luckiest Guy', Times, serif;
     font-size: 80px;
     text-shadow: 1px 1px 5px black;
+    color: white;
+    padding: 15px 0px;
 }
 
 header.reputation h1 {
@@ -210,13 +225,36 @@ header.reputation h1 {
 }
 
 header.folklore h1 {
-    padding: 20px;
+    padding: 20px 0px;
     color: #d6b56e;
     font-family: "Kalam", Times, serif;
     text-shadow: 1px 1px 10px black;
 }
 
+figcaption {
+    font-size: 30px;
+}
+
+figure {
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.eras p {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+div.text_picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 20px auto;
+}
+
 @media only screen and (min-width: 600px) {
+   
     div.song_container {
         grid-template-columns: 1fr 1fr;
     }
@@ -234,7 +272,7 @@ header.folklore h1 {
     }
 
     header.eras h1 {
-        padding: 100px;
+        padding: 100px 0px;
         color: white;
         font-size: 80px;
         font-family: 'Luckiest Guy', Times, serif;
@@ -248,7 +286,7 @@ header.folklore h1 {
     }
 
     header.speak h1 {
-        padding: 70px;
+        padding: 70px 0px;
         color: white;
         text-shadow: 1px 1px 5px black;
         font-weight: 600;
@@ -260,7 +298,7 @@ header.folklore h1 {
     }
 
     header.reputation h1 {
-        padding: 80px;
+        padding: 80px 0px;
     }
 
     header.folklore {
@@ -271,13 +309,32 @@ header.folklore h1 {
     }
 
     header.folklore h1 {
-        padding: 70px;
+        padding: 70px 0px;
     }
 
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li a {
+        display: inline;
+        font-size: 45px;
+        margin: 0 10px;
+        padding: 0 10px;
+    }
 
+    nav li {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    div.text_picture {
+        grid-template-columns: 1fr 1fr;
+    }
+    
     div.song_container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -303,7 +360,7 @@ header.folklore h1 {
     }
 
     header.eras h1 {
-        padding: 150px;
+        padding: 150px 0px;
         font-size: 100px;
     }
 }
