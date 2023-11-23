@@ -46,7 +46,7 @@ p {
 div.song {
     border-radius: 5%;
     padding: 5px;
-    width: 95%;
+    width: 90%;
     margin: 10px;
 }
 
@@ -362,5 +362,9 @@ div.text_picture {
     header.eras h1 {
         padding: 150px 0px;
         font-size: 100px;
+    }
+
+    div.song:hover {
+        transform: rotateY(-20deg);
     }
 }
