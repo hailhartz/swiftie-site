@@ -1,3 +1,13 @@
+@keyframes flyIn {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0%); }
+}
+
+@keyframes flyOut {
+    from { transform: translateY(0%); }
+    to { transform: translateY(100%); }
+}
+
 header.speak {
     background-color: #923c81;
 }
@@ -8,7 +18,7 @@ header.eras {
 }
 
 header.choose {
-    background-color: red;
+    background-color: #aa4f69;
     height: 150px;
 }
 
@@ -28,6 +38,10 @@ body.speak {
 
 body.folklore {
     background-color: #ccc494;
+}
+
+body.choose {
+    background-color: #d9c6bb;
 }
 
 div.song_container {
@@ -53,6 +67,8 @@ div.song_container div {
     padding: 5px;
     width: 90%;
     margin: 10px;
+    /* animation-name: flyIn;
+    animation-duration: 4s; */
 }
 
 div.song_speak {
@@ -197,6 +213,10 @@ nav li a:hover {
     background-color: #d6b56e;
 }
 
+.folklore nav li a {
+    color: black;
+}
+
 .folklore nav li a:hover {
     background-color: #d9cb9b;
 }
@@ -207,6 +227,14 @@ nav li a:hover {
 
 .eras nav li a:hover {
     background-color: #ec7fcc;
+}
+
+.choose nav ul {
+    background-color: #692a40;
+}
+
+.choose nav li a:hover {
+    background-color: #813f56;
 }
 
 body.eras {
@@ -227,6 +255,7 @@ header.eras h1 {
 
 header.choose h1 {
     font-family: 'Luckiest Guy', Times, serif;
+    padding: 15px 0px;
 }
 
 header.reputation h1 {
@@ -264,13 +293,15 @@ div.text_picture {
 
 h2 {
     font-size: 50px;
+    margin: 10px;
 }
 
 button {
     font-size: 40px;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #ac9a94;
     margin: 10px;
+    border-radius: 20%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -303,6 +334,18 @@ button {
         height: 270px;
         background-size: cover;
         background-position-y: center;
+    }
+
+    header.choose {
+        background-image: url('../images/choose_era_background.webp');
+        height: 270px;
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    header.choose h1 {
+        color: white;
+        padding: 70px 0px;
     }
 
     header.speak h1 {
