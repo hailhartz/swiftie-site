@@ -195,6 +195,10 @@ function chooseSpeakNow() {
         speak_songs[index].style.display = "block";
     }
 
+     // set the header and body class
+     document.querySelector("header").className = "speak";
+     document.querySelector("body").className = "speak";
+
 }
 
 function chooseReputation() {
@@ -214,6 +218,10 @@ function chooseReputation() {
         speak_songs[index].style.display = "none";
     }
 
+    // set the header and body class
+    document.querySelector("header").className = "reputation";
+    document.querySelector("body").className = "reputation";
+
 }
 
 function chooseFolklore() {
@@ -232,5 +240,9 @@ function chooseFolklore() {
     for(let index = 0; index < speak_songs.length; index++) {
         speak_songs[index].style.display = "none";
     }
+
+    // set the header and body class
+    document.querySelector("header").className = "folklore";
+    document.querySelector("body").className = "folklore";
 
 }

@@ -7,6 +7,11 @@ header.eras {
     height: 150px;
 }
 
+header.choose {
+    background-color: red;
+    height: 150px;
+}
+
 h1 {
     font-size: 100px;
     text-align: center;
@@ -43,22 +48,22 @@ p {
     margin: 10px;
 }
 
-div.song {
+div.song_container div {
     border-radius: 5%;
     padding: 5px;
     width: 90%;
     margin: 10px;
 }
 
-.speak div.song {
+div.song_speak {
     background-color: #db7ca5;
 }
 
-.reputation div.song {
+div.song_rep {
     background-color: rgb(169, 151, 151);
 }
 
-.folklore div.song {
+div.song_folklore {
     background-color: #999c56;
 }
 
@@ -220,6 +225,10 @@ header.eras h1 {
     padding: 15px 0px;
 }
 
+header.choose h1 {
+    font-family: 'Luckiest Guy', Times, serif;
+}
+
 header.reputation h1 {
     font-family: "Playfair Dispay SC", Times, serif;
 }
@@ -251,6 +260,17 @@ div.text_picture {
     grid-template-columns: 1fr;
     width: 95%;
     margin: 20px auto;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+button {
+    font-size: 40px;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -364,7 +384,7 @@ div.text_picture {
         font-size: 100px;
     }
 
-    div.song:hover {
+    div.song_container div:hover {
         transform: rotateY(-20deg);
     }
 }
