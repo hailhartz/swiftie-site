@@ -304,6 +304,26 @@ button {
     border-radius: 20%;
 }
 
+.birdOne {
+    position: fixed;
+    right: -250px;
+    top: 0;
+}
+
+@keyframes birdFly {
+    from { right: -250px; }
+    to { right: 1800px; }
+}
+
+.snake {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+    max-height: 200px;
+    max-width: 200px;
+}
+
 @media only screen and (min-width: 600px) {
    
     div.song_container {
