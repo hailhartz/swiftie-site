@@ -73,20 +73,33 @@ function chooseReputation() {
     document.querySelector("body").className = "reputation";
     document.querySelector(".snake").style.display = "inline";
 
-    document.addEventListener('mousemove', function(e) {
-        destX = e.clientX;
-        destY = e.clientY;
-        snakeMove();
-    })
+    // document.addEventListener('mousemove', function(e) {
+    //     destX = e.clientX;
+    //     destY = e.clientY;
+    //     snakeMove();
 
-    function snakeMove() {
-        let snake = document.querySelector(".snake");
-        currentX = snake.style.left;
-        currentY = snake.style.top;
-        snake.style.transform = 'translate(' + destX + 'px,' + destY + 'px)';
-        // snake.css('transition', 'transform 1.8s linear');
-    }
+    // })
 
+    // function snakeMove() {
+    //     let snake = document.querySelector(".snake");
+    //     currentX = snake.style.left;
+    //     currentY = snake.style.top;
+    //     snake.style.transform = 'translate(' + destX + 'px,' + destY + 'px)';
+    //     // snake.css('transition', 'transform 1.8s linear');
+    // }
+
+}
+
+function snakeMove(e) {
+    destX = e.clientX;
+    destY = e.clientY;
+    console.log(destX);
+    console.log(destY);
+    let snake = document.querySelector(".snake");
+    currentX = snake.style.left;
+    currentY = snake.style.top;
+    snake.style.transform = 'translate(' + destX + 'px,' + destY + 'px)';
+    // snake.css('transition', 'transform 1.8s linear');
 }
 
 function chooseFolklore() {
