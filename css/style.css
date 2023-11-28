@@ -29,7 +29,7 @@ h1 {
 
 .speak h1 {
     color: white;
-    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 body.speak {
@@ -70,7 +70,7 @@ div.song_container div {
     border-radius: 5%;
     padding: 5px;
     width: 90%;
-    margin: 10px;
+    margin: 25px 10px;
     /* animation-name: flyIn;
     animation-duration: 4s; */
 }
@@ -272,7 +272,7 @@ header.choose h1 {
 }
 
 header.reputation h1 {
-    font-family: "Playfair Dispay SC", Times, serif;
+    font-family: "UnifrakturMaguntia", Times, serif;
 }
 
 header.folklore h1 {
@@ -311,10 +311,10 @@ h2 {
 
 button {
     font-size: 40px;
-    padding: 10px;
+    padding: 15px;
     background-color: #ac9a94;
     margin: 10px;
-    border-radius: 20%;
+    border-radius: 25%;
 }
 
 .birdOne {
@@ -343,6 +343,36 @@ button {
     padding: 10px;
     border: 10px solid palevioletred;
 }
+
+div.song_container p, .eras p, .eras figcaption {
+    font-family: 'Lato', sans-serif;
+}
+
+.speak h2, .speak h3, .speak nav a, .speak button {
+    font-family: 'Satisfy', cursive;
+}
+
+.reputation h2, .reputation h3, .reputation nav a, .reputation button {
+    font-family: 'Pirata One', serif;
+}
+
+.folklore h2, .folklore h3, .folklore nav a, .folklore button {
+    font-family: 'Akaya Kanadaka', sans-serif;
+}
+
+.choose h2, .choose h3, .choose nav a, .choose button, .eras h2, .eras h3, .eras nav a, .eras button {
+    font-family: 'Nerko One', sans-serif;
+}
+
+.folklore button {
+    background-color: #453c1c;
+    color: #c6c2ba;
+}
+
+.speak button {
+    background-color: #ce8daf;
+}
+
 
 @media only screen and (min-width: 600px) {
     /* tablet view */
@@ -477,6 +507,42 @@ button {
     div.song_container div:hover {
         transform: rotateY(-20deg);
     }
+
+    header.folklore h1 {
+        font-size: 150px;
+        padding: 100px 0px;
+    }
+
+    header.reputation h1 {
+        font-size: 150px;
+        padding: 120px 0px;
+    }
+
+    header.speak h1 {
+        font-size: 150px;
+        padding: 100px 0px;
+    }
+
+    .folklore h2, .folklore h3, .folklore nav a, .folklore button {
+        font-size: 60px;
+    }
+    
+    .choose h2, .choose h3, .choose nav a, .choose button, .eras nav a {
+        font-size: 60px;
+    }
+
+    .folklore h2, .folklore h3, .folklore nav a, .folklore button {
+        font-size: 60px;
+    }
+    
+    .reputation h2, .reputation h3, .reputation nav a, .reputation button {
+        font-size: 60px;
+    }
+
+    .speak h2, .speak h3, .speak nav a, .speak button {
+        font-size: 60px;
+    }
+    
 }
 
 @media only screen and (min-width: 790px) {
