@@ -142,11 +142,11 @@ span {
     animation-direction: alternate;
 }
 
-.one_desktop {
+.one_desktop, .one_small, .one_large {
     display: none;
 }
 
-.two_desktop {
+.two_desktop, .two_small, .two_large {
     display: none;
     animation-name: shimmerOne;
     animation-duration: 0.75s;
@@ -154,7 +154,7 @@ span {
     animation-direction: alternate;
 }
 
-.three_desktop {
+.three_desktop, .three_small, .three_large {
     display: none;
     animation-name: shimmerOne;
     animation-duration: 0.75s;
@@ -163,7 +163,7 @@ span {
     animation-direction: alternate;
 }
 
-.four_desktop {
+.four_desktop, .four_small, .four_large {
     display: none;
     animation-name: shimmerOne;
     animation-duration: 0.75s;
@@ -172,7 +172,7 @@ span {
     animation-direction: alternate;
 }
 
-.five_desktop {
+.five_desktop, .five_small, .five_large {
     display: none;
     animation-name: shimmerOne;
     animation-duration: 0.75s;
@@ -188,6 +188,11 @@ td {
     height: 5px;
     /* margin: 0px;
     padding: 0px; */
+}
+
+table {
+    width: 100%;
+    display: none;
 }
 
 nav ul {
@@ -330,6 +335,7 @@ button {
     display: none;
     max-height: 200px;
     max-width: 200px;
+    pointer-events: none;
 }
 
 .eras img {
@@ -339,6 +345,27 @@ button {
 }
 
 @media only screen and (min-width: 600px) {
+    /* tablet view */
+
+    .one_desktop {
+        display: revert;
+    }
+
+    .two_desktop {
+        display: revert;
+    }
+    
+    .three_desktop {
+        display: revert;
+    }
+    
+    .four_desktop {
+        display: revert;
+    }
+    
+    .five_desktop {
+        display: revert;
+    }
    
     div.song_container {
         grid-template-columns: 1fr 1fr;
@@ -428,6 +455,8 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+    /* for general desktop */
+
     div.text_picture {
         grid-template-columns: 1fr 1fr;
     }
@@ -436,36 +465,65 @@ button {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .one_desktop {
-        display: revert;
-    }
-
-    /* .two_desktop {
-        display: inline-block;
-    }
-    
-    .three_desktop {
-        display: inline-block;
-    }
-    
-    .four_desktop {
-        display: inline-block;
-    }
-    
-    .five_desktop {
-        display: inline-block;
-    } */
-
-    header.eras {
+    header.eras, header.choose, header.folklore, header.reputation, header.speak {
         height: 400px;
     }
 
-    header.eras h1 {
+    header.eras h1, header.choose h1, header.folklore h1, header.reputation h1, header.speak h1 {
         padding: 150px 0px;
         font-size: 100px;
     }
 
     div.song_container div:hover {
         transform: rotateY(-20deg);
+    }
+}
+
+@media only screen and (min-width: 790px) {
+    /* for smaller desktop glitter effect, screens 790 - 1100 pixels */
+
+    .one_small {
+        display: revert;
+    }
+
+    .two_small {
+        display: revert;
+    }
+    
+    .three_small {
+        display: revert;
+    }
+    
+    .four_small {
+        display: revert;
+    }
+    
+    .five_small {
+        display: revert;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    /* for larger desktop glitter effect, 1100 pixels and up */
+
+    .one_large {
+        display: revert;
+    }
+
+    .two_large {
+        display: revert;
+    }
+    
+    .three_large {
+        display: revert;
+    }
+
+    .four_large {
+        display: revert;
+    }
+    
+    .five_large {
+        display: revert;
     }
 }

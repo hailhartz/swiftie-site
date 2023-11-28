@@ -32,8 +32,12 @@ function chooseSpeakNow() {
     //hide snake if visible
      document.querySelector(".snake").style.display = "none";
 
+    //add glitter border
+    document.querySelector("table").style.display = "revert";
+
      // set the header and body class
      document.querySelector("header").className = "speak";
+     document.querySelector("h1").innerHTML = "Speak Now";
      document.querySelector("body").className = "speak";
 
 
@@ -72,8 +76,12 @@ function chooseReputation() {
         }
     }, 400)
 
+    // remove glitter border if present
+    document.querySelector("table").style.display = "none";
+
     // set the header and body class
     document.querySelector("header").className = "reputation";
+    document.querySelector("h1").innerHTML = "Reputation";
     document.querySelector("body").className = "reputation";
     document.querySelector(".snake").style.display = "inline";
 
@@ -147,8 +155,12 @@ function chooseFolklore() {
     //hide snake if visible
     document.querySelector(".snake").style.display = "none";
 
+    // remove glitter border if present
+    document.querySelector("table").style.display = "none";
+
     // set the header and body class
     document.querySelector("header").className = "folklore";
+    document.querySelector("h1").innerHTML = "folklore";
     document.querySelector("body").className = "folklore";
 
 }
@@ -203,8 +215,12 @@ function chooseAll() {
     //hide snake if visible
     document.querySelector(".snake").style.display = "none";
 
+    // remove glitter border if present
+    document.querySelector("table").style.display = "none";
+
      // set the header and body class
      document.querySelector("header").className = "choose";
+     document.querySelector("h1").innerHTML = "The Eras";
      document.querySelector("body").className = "choose";
 
 }
