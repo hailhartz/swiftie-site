@@ -504,9 +504,9 @@ div.song_container p, .eras p, .eras figcaption {
         font-size: 100px;
     }
 
-    div.song_container div:hover {
+    /* div.song_container div:hover {
         transform: rotateY(-20deg);
-    }
+    } */
 
     header.folklore h1 {
         font-size: 150px;
