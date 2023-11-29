@@ -105,8 +105,8 @@ function chooseReputation() {
 function snakeMove(e) {
     destX = e.clientX;
     destY = e.clientY;
-    console.log(destX);
-    console.log(destY);
+    // console.log(destX);
+    // console.log(destY);
     let snake = document.querySelector(".snake");
     currentX = snake.style.left;
     currentY = snake.style.top;
