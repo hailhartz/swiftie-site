@@ -1,57 +1,38 @@
 function rotateCard(event) {
-    const card = document.querySelector("div.song_speak")
+    const card = event.currentTarget;
+    card.style.transition = 'transform 0.5s';
     const rect = card.getBoundingClientRect();
     const centerX = (rect.left + rect.right) / 2;
     const centerY = (rect.top + rect.bottom) / 2;
-    const posX = event.pageX - centerX;
-    const posY = event.pageY - centerY;
-    if ( posX < 0 ) {
-        card.style.webkitTransform = 'rotate(-20deg)';
+    // console.log("rect.top: ", rect.top);
+    // console.log("rect.bottom", rect.bottom);
+    // console.log("centerY:", centerY);
+    const posX = event.clientX - centerX;
+    const posY = event.clientY - centerY;
+    console.log("ClientY: ", event.clientY);
+    if ( posX < 0 && posY > 0) {
+        card.style.transform = 'skew(-1deg,-1deg)';
+        // console.log("Skew left bottom");
+        // console.log("Pos Y:", posY);
     }
-    else {
-        card.dataset.rotateX = 20;
+    else if(posX > 0 && posY > 0) {
+        card.style.transform = 'skew(1deg,1deg)';
+        // console.log("Skew right bottom");
+        // console.log("Pos Y:", posY);
     }
-    if ( posY < 0 ) {
-        card.dataset.rotateY = -20;
+    else if(posX < 0 && posY < 0) {
+        card.style.transform = 'skew(1deg,1deg)';
+        // console.log("Skew left top");
+        // console.log("Pos Y:", posY);
     }
-    else {
-        card.dataset.rotateY = 20;
+    else if( posX > 0 && posY < 0) {
+        card.style.transform = 'skew(-1deg,-1deg)';
+        // console.log("Skew right top");
+        // console.log("Pos Y:", posY);
     }
 }
 
-
-
-// document.addEventListener("DOMContentLoaded", (event) => {
-//     let song_cont = document.querySelector("div.song_container");
-//     let cards = song_cont.querySelectorAll("div");
-//     // const cards = document.querySelectorAll("div.song_speak");
-//     // cards.push(document.querySelectorAll("div.song_rep"));
-//     cards.forEach((card) => {
-//         card.addEventListener("mousemove", (event) => {
-            // const rect = card.getBoundingClientRect();
-            // const centerX = (rect.left + rect.right) / 2;
-            // const centerY = (rect.top + rect.bottom) / 2;
-            // const posX = event.pageX - centerX;
-            // const posY = event.pageY - centerY;
-            // if ( posX < 0 ) {
-            //     card.style.rotateX = "-20deg";
-            // }
-            // else {
-            //     card.dataset.rotateX = 20;
-            // }
-            // if ( posY < 0 ) {
-            //     card.dataset.rotateY = -20;
-            // }
-            // else {
-            //     card.dataset.rotateY = 20;
-            // }
-//         });
-
-//         card.addEventListener("mouseout", (event) => {
-//             card.dataset.rotateX = 0;
-//             card.dataset.rotateY = 0;
-//         });
-//     });
-
-//     console.log(cards);
-// })
+function resetCard(event) {
+    const card = event.currentTarget;
+    card.style.webkitTransform = 'skew(0deg,0deg)';
+}

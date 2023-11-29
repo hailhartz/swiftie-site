@@ -210,6 +210,10 @@ nav li a {
     padding: 10px;
   }
 
+.eras nav li a {
+    color: black;
+}
+
 nav li a:hover {
     background-color: #8945be;
 }

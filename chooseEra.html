@@ -601,37 +601,37 @@
 
     <main>
         <h2>Choose an Era:</h2>
-        <nav>
-            <button onClick="chooseSpeakNow()" >Speak Now</button>
-            <button onClick="chooseReputation()" >Reputation</button>
-            <button onClick="chooseFolklore()" >Folklore</button>
-            <button onClick="chooseAll()">All</button>
+        <nav aria-label="navigate between albums">
+            <button aria-label="Choose songs from Speak Now" onClick="chooseSpeakNow()" >Speak Now</button>
+            <button aria-label="Choose songs from Reputation" onClick="chooseReputation()" >Reputation</button>
+            <button aria-label="Choose songs from folklore" onClick="chooseFolklore()" >Folklore</button>
+            <button aria-label="Choose all available songs" onClick="chooseAll()">All</button>
         </nav>
 
         <div class="song_container">
-            <div class="song_speak" onmousemove="rotateCard(event)">
+            <div class="song_speak" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Ours</h3>
-                <p>"Ours" is a song that discusses a happy relationship between two people
+                <p>"Ours" is a song that discusses a happy relationship 
                     that continues in spite of the dreary world surrounding them. Swift
                     wrote this song about her relationship with John Mayer, who 
                     was 10 years older than her at the time, but I think that the song
-                    is sweet nonetheless.
+                    is sweet when ignoring its context.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3yNJkriPzWjkkDAWHIAVUq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Ours" style="border-radius:12px" src="https://open.spotify.com/embed/track/3yNJkriPzWjkkDAWHIAVUq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            <div class="song_speak">
+            <div class="song_speak" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Enchanted</h3>
                 <p>
                     "Enchanted" chronicles the experience of meeting someone for the first
                     time and being "enchanted" by them. Allegedly the song is about Adam Young, 
                     the lead singer of Owl City. He wrote a response song but it was released 
-                    after the moment of "Enchanted" passed.
+                    long after the moment of "Enchanted" passed.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3sW3oSbzsfecv9XoUdGs7h?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Enchanted" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sW3oSbzsfecv9XoUdGs7h?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            <div class="song_speak">
+            <div class="song_speak" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Speak Now</h3>
                 <p>
                     The thesis of Swift's album is embodied by "Speak Now," which tells 
@@ -640,21 +640,21 @@
                     rumored to be about her friend Hayley Williams. I like how the song is 
                     fun and upbeat.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5xXqyjLicvEpch72qEryFT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Speak Now" style="border-radius:12px" src="https://open.spotify.com/embed/track/5xXqyjLicvEpch72qEryFT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            <div class="song_rep">
+            <div class="song_rep" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Look What You Made Me Do</h3>
                 <p>
                     "Look What You Made Me Do" is definitely one of Swift's most 
-                    notorious songs, but its for good reason. This is the first song 
+                    notorious songs, but it's for good reason. This is the first song 
                     that Swift released after facing extreme backlash during her feud 
                     with Kanye West, with a music video that poked fun at her different 
-                    personas over the years.
+                    personas from her past.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1P17dC1amhFzptugyAO7Il?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Look What You Made Me Do" style="border-radius:12px" src="https://open.spotify.com/embed/track/1P17dC1amhFzptugyAO7Il?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="song_rep">
+            <div class="song_rep" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Call It What You Want</h3>
                 <p>
                     While Reputation was marketed as a villian or revenge album, 
@@ -663,21 +663,21 @@
                     It discusses Alwyn staying by Swift's side while she felt she was 
                     losing her career and repuation.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GwMQaZz6Au3QLDbjbMdme?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Call It What You Want" style="border-radius:12px" src="https://open.spotify.com/embed/track/1GwMQaZz6Au3QLDbjbMdme?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="song_rep">
+            <div class="song_rep" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>Getaway Car</h3>
                 <p>
                     On the surface, "Getaway Car" tells the story of a woman betraying her 
                     partner in crime. The song is likely an allegory for betrayal in 
                     one of Swift's real-life relationships. I think that the 
-                    song is thrilling to listen to with the story's highs and lows.
+                    song is thrilling to listen to with the song's highs and lows.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VE4kBnHJUgtMf0dy6DRmW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of Getaway Car" style="border-radius:12px" src="https://open.spotify.com/embed/track/0VE4kBnHJUgtMf0dy6DRmW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
             </div>
 
-            <div class="song_folklore">
+            <div class="song_folklore" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>august</h3>
                 <p>
                     Folklore is unique from Swift's other albums since 
@@ -686,9 +686,9 @@
                     completely fictional stories. "august" tells the bittersweet story of 
                     a love triangle from the "other" woman's perspective.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6nK2pIKFcRc5frrZKHgsiT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of august" style="border-radius:12px" src="https://open.spotify.com/embed/track/6nK2pIKFcRc5frrZKHgsiT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="song_folklore">
+            <div class="song_folklore" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>this is me trying</h3>
                 <p>
                     The song "this is me trying" discusses a lot of 
@@ -696,18 +696,18 @@
                     The subject of the song grapples with moving on from 
                     a breakup and generally echoes a feeling of being lost in life.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7cm50Lw03k6VvRauJtkyTj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of this is me trying" style="border-radius:12px" src="https://open.spotify.com/embed/track/7cm50Lw03k6VvRauJtkyTj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="song_folklore">
+            <div class="song_folklore" onmousemove="rotateCard(event)" onmouseout="resetCard(event)">
                 <h3>my tears ricochet</h3>
                 <p>
                     I've always thought that "my tears ricochet" was 
                     written from the perspective of a ghost looking over 
-                    her funeral. I like how the song a very haunting feeling. 
-                    The song discusses the subject's greivances with 
+                    her funeral. I like how the song has a very haunting feeling. 
+                    The song discusses the subject's grievances with 
                     a former partner or friend.
                 </p>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5P2bHCDM2tsgIaYWsZMhu5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe aria-label="spotify widget to play preview of my tears ricochet" style="border-radius:12px" src="https://open.spotify.com/embed/track/5P2bHCDM2tsgIaYWsZMhu5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
         </div>
