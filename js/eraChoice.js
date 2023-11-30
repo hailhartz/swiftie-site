@@ -4,15 +4,19 @@ function chooseSpeakNow() {
     let rep_songs = document.querySelectorAll(".song_rep");
     let speak_songs = document.querySelectorAll(".song_speak");
 
-    //use animation to send them out
-    for(let index = 0; index < rep_songs.length; index++) {
-        rep_songs[index].style.animation = "flyOut 0.6s";
-    }
-    for(let index = 0; index < folklore_songs.length; index++) {
-        folklore_songs[index].style.animation = "flyOut 0.6s";
-    }
-    for(let index = 0; index < speak_songs.length; index++) {
-        speak_songs[index].style.animation = "flyIn 1s";
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+    if (!isReduced) {
+
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+            rep_songs[index].style.animation = "flyOut 0.6s";
+        }
+        for(let index = 0; index < folklore_songs.length; index++) {
+            folklore_songs[index].style.animation = "flyOut 0.6s";
+        }
+        for(let index = 0; index < speak_songs.length; index++) {
+            speak_songs[index].style.animation = "flyIn 1s";
+        }
     }
     
     //set the display to none after 2 s
@@ -32,8 +36,10 @@ function chooseSpeakNow() {
     //hide snake if visible
      document.querySelector(".snake").style.display = "none";
 
-    //add glitter border
-    document.querySelector("table").style.display = "revert";
+    if (!isReduced) {
+        //add glitter border
+        document.querySelector("table").style.display = "revert";
+    }
 
      // set the header and body class
      document.querySelector("header").className = "speak";
@@ -49,16 +55,20 @@ function chooseReputation() {
     let speak_songs = document.querySelectorAll(".song_speak");
     let rep_songs = document.querySelectorAll(".song_rep");
 
-    for(let index = 0; index < rep_songs.length; index++) {
-        rep_songs[index].style.animation = "flyIn 1s";
-    }
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
-    //send out other songs
-    for(let index = 0; index < folklore_songs.length; index++) {
-        folklore_songs[index].style.animation = "flyOut 0.6s";
-    }
-    for(let index = 0; index < speak_songs.length; index++) {
-        speak_songs[index].style.animation = "flyOut 0.6s";
+    if (!isReduced) {
+        for(let index = 0; index < rep_songs.length; index++) {
+            rep_songs[index].style.animation = "flyIn 1s";
+        }
+
+        //send out other songs
+        for(let index = 0; index < folklore_songs.length; index++) {
+            folklore_songs[index].style.animation = "flyOut 0.6s";
+        }
+        for(let index = 0; index < speak_songs.length; index++) {
+            speak_songs[index].style.animation = "flyOut 0.6s";
+        }
     }
 
     //change visibility of other songs to 0 and send new songs in
@@ -83,7 +93,10 @@ function chooseReputation() {
     document.querySelector("header").className = "reputation";
     document.querySelector("h1").innerHTML = "Reputation";
     document.querySelector("body").className = "reputation";
-    document.querySelector(".snake").style.display = "inline";
+
+    if (!isReduced) {
+        document.querySelector(".snake").style.display = "inline";
+    }
 
     // document.addEventListener('mousemove', function(e) {
     //     destX = e.clientX;
@@ -120,15 +133,19 @@ function chooseFolklore() {
     let rep_songs = document.querySelectorAll(".song_rep");
     let speak_songs = document.querySelectorAll(".song_speak");
 
-    //use animation to send them out
-    for(let index = 0; index < rep_songs.length; index++) {
-        rep_songs[index].style.animation = "flyOut 0.6s";
-    }
-    for(let index = 0; index < folklore_songs.length; index++) {
-        speak_songs[index].style.animation = "flyOut 0.6s";
-    }
-    for(let index = 0; index < speak_songs.length; index++) {
-        folklore_songs[index].style.animation = "flyIn 1s";
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    if (!isReduced) {
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+            rep_songs[index].style.animation = "flyOut 0.6s";
+        }
+        for(let index = 0; index < folklore_songs.length; index++) {
+            speak_songs[index].style.animation = "flyOut 0.6s";
+        }
+        for(let index = 0; index < speak_songs.length; index++) {
+            folklore_songs[index].style.animation = "flyIn 1s";
+        }
     }
     
     //set the display to none after 2 s
@@ -145,12 +162,14 @@ function chooseFolklore() {
         }
     }, 400)
 
-    //start the bird animation
-    document.querySelector(".birdOne").style.animation = "birdFly 4s";
+    if (!isReduced) {
+        //start the bird animation
+        document.querySelector(".birdOne").style.animation = "birdFly 4s";
 
-    setTimeout( function() {
-        document.querySelector(".birdOne").style.animation = "revert";
-    }, 4000)
+        setTimeout( function() {
+            document.querySelector(".birdOne").style.animation = "revert";
+        }, 4000)
+    }
 
     //hide snake if visible
     document.querySelector(".snake").style.display = "none";
@@ -172,15 +191,19 @@ function chooseAll() {
     let rep_songs = document.querySelectorAll(".song_rep");
     let speak_songs = document.querySelectorAll(".song_speak");
 
-    //use animation to send them out
-    for(let index = 0; index < rep_songs.length; index++) {
-        rep_songs[index].style.animation = "flyIn 1s";
-    }
-    for(let index = 0; index < folklore_songs.length; index++) {
-        speak_songs[index].style.animation = "flyIn 1s";
-    }
-    for(let index = 0; index < speak_songs.length; index++) {
-        folklore_songs[index].style.animation = "flyIn 1s";
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    if(!isReduced) {
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+            rep_songs[index].style.animation = "flyIn 1s";
+        }
+        for(let index = 0; index < folklore_songs.length; index++) {
+            speak_songs[index].style.animation = "flyIn 1s";
+        }
+        for(let index = 0; index < speak_songs.length; index++) {
+            folklore_songs[index].style.animation = "flyIn 1s";
+        }
     }
     
     //set the display to none after 2 s
