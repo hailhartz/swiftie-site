@@ -597,3 +597,19 @@ div.song_container p, .eras p, .eras figcaption {
         display: revert;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    div.song_container div {
+        animation: none;
+    }
+
+    table td {
+        animation: none;
+        background-color: silver;
+    }
+
+    img.birdOne {
+        display: none;
+        animation: none;
+    }
+}
