@@ -18,6 +18,18 @@ function chooseSpeakNow() {
             speak_songs[index].style.animation = "flyIn 1s";
         }
     }
+    else {
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+           rep_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < folklore_songs.length; index++) {
+           speak_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < speak_songs.length; index++) {
+           folklore_songs[index].style.animation = "none";
+       }
+   }
     
     //set the display to none after 2 s
     setTimeout( function () {
@@ -70,6 +82,18 @@ function chooseReputation() {
             speak_songs[index].style.animation = "flyOut 0.6s";
         }
     }
+    else {
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+           rep_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < folklore_songs.length; index++) {
+           speak_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < speak_songs.length; index++) {
+           folklore_songs[index].style.animation = "none";
+       }
+   }
 
     //change visibility of other songs to 0 and send new songs in
     setTimeout(function() {
@@ -147,6 +171,18 @@ function chooseFolklore() {
             folklore_songs[index].style.animation = "flyIn 1s";
         }
     }
+    else {
+        //use animation to send them out
+        for(let index = 0; index < rep_songs.length; index++) {
+           rep_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < folklore_songs.length; index++) {
+           speak_songs[index].style.animation = "none";
+       }
+       for(let index = 0; index < speak_songs.length; index++) {
+           folklore_songs[index].style.animation = "none";
+       }
+   }
     
     //set the display to none after 2 s
     setTimeout( function () {
@@ -203,6 +239,18 @@ function chooseAll() {
         }
         for(let index = 0; index < speak_songs.length; index++) {
             folklore_songs[index].style.animation = "flyIn 1s";
+        }
+    }
+    else {
+         //use animation to send them out
+         for(let index = 0; index < rep_songs.length; index++) {
+            rep_songs[index].style.animation = "none";
+        }
+        for(let index = 0; index < folklore_songs.length; index++) {
+            speak_songs[index].style.animation = "none";
+        }
+        for(let index = 0; index < speak_songs.length; index++) {
+            folklore_songs[index].style.animation = "none";
         }
     }
     
