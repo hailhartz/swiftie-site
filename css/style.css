@@ -377,6 +377,13 @@ div.song_container p, .eras p, .eras figcaption {
     background-color: #ce8daf;
 }
 
+#haileyPicture {
+    border-radius: 50%;
+    max-width: 45%;
+    display: block;
+    margin: 25px auto;
+}
+
 
 @media only screen and (min-width: 600px) {
     /* tablet view */

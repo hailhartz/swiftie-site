@@ -145,10 +145,7 @@ function snakeMove(e) {
     // console.log(destX);
     // console.log(destY);
     let snake = document.querySelector(".snake");
-    currentX = snake.style.left;
-    currentY = snake.style.top;
     snake.style.transform = 'translate(' + destX + 'px,' + destY + 'px)';
-    // snake.css('transition', 'transform 1.8s linear');
 }
 
 function chooseFolklore() {
