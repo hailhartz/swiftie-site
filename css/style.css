@@ -384,9 +384,25 @@ div.song_container p, .eras p, .eras figcaption {
     margin: 25px auto;
 }
 
+a:focus, button:focus {
+    border: 5px solid black;
+}
+
+#skip {
+    position: absolute;
+    left: -500px;
+    font-size: 50px;
+    background-color: white;
+}
+
 
 @media only screen and (min-width: 600px) {
     /* tablet view */
+
+    #skip:focus {
+        left: 600px;
+    }
+
 
     .one_desktop {
         display: revert;
